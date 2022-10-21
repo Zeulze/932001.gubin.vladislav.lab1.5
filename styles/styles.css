@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1000px;
+
+    margin: 0 auto;
+}
+
+.box {
+    position: relative;
+    padding: 20px;
+
+    background-color:aqua;
+    border-bottom: 2px solid black;
+    
+    box-shadow: 0 0 2px 0px grey;  
+}
+
+/* .box:hover{
+    background-color: red;
+} */
+
+.box-header {
+    margin-top: 0;
+}
+
+.box-text {
+    margin-top: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.box-btn {
+    width: 200px;
+    height: 30px;
+    border: unset;
+
+    box-shadow: 0 0px 3px 0px grey;
+
+    color: white;
+
+    background: rgb(45,154,54);
+    background: linear-gradient(0deg, rgba(45,154,54,1) 10%, rgba(5,255,0,1) 100%);  
+
+    cursor: pointer;
+}
+
+.box-btn:active {
+    background: rgb(154,45,45);
+    background: linear-gradient(0deg, rgba(154,45,45,1) 30%, rgba(255,0,134,1) 100%);
+}
+
+main {
+    position: relative;
+}
+
+.popped-box {
+    display: none;
+
+
+    position: absolute;
+    left: 25%;
+    top: 75%;
+
+    padding: 10px;
+
+    width: 500px;
+
+    background-color: yellow;
+}
+
+.popped-box-header{
+    text-align: center;
+
+    margin-top: 0;
+}
